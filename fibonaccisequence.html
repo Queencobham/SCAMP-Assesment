@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head> 
+  <style>
+   .container{
+     width: 405px;
+     word-break: break-all;
+     height: auto;
+     border:1px solid black;
+     font-size: 20px;
+     font-weight: bold;
+     letter-spacing: 4px;
+     color: black;
+     background-color: bisque
+   }
+  </style>
+  <meta charset="UTF-8">
+  <title>fibbonacci sequence</title>
+</head>  
+ 
+<body>
+  <div class="container">
+  <script>
+    function getfibbonacci(n){
+      var fibarr = [0,1];
+    
+      for(var i=2; i<=n; i++)
+      {
+          fibarr.push(fibarr[i-1] + fibarr[i-2]);
+      }        
+      return fibarr;
+    }
+         document.write(getfibbonacci(20));
+  </script>
+  </div>  
+ </body>
+</html>
